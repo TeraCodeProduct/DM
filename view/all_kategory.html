@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dagangan Mahasiswa</title>
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="css/style_all_kategory.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only col">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">DaganganMahasiswa.com</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			          	<span class="glyphicon glyphicon-map-marker"></span>Lokasi 
+			          	<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#" style="color:black;"><i class="fa fa-map-marker" aria-hidden="true"></i>Kota</a></li>
+			            <li><a href="#" style="color:black;"><span class="glyphicon glyphicon-education"></span>Universitas</a></li>
+			          </ul>
+			        </li> 
+			        </ul>
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="Search">
+			        </div>
+			        <button type="submit" class="btn btn-default">
+			        	<span class="glyphicon glyphicon-search"></span></button>
+			        <button type="button" class="btn btn-primary" style="background-color: #28a51f; border-color:  #28a51f;"><a href="#" style="text-decoration: none; color:white;">Semua</a></button>
+			      </form>
+			      	<ul class="nav navbar-nav navbar-right">
+			      		<li><a href="#"><span class="glyphicon glyphicon-plus"></span>Pasang Iklan</a></li>
+			      		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+			      		<li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="main-content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-1 col-md-12">
+					<div class="iklan">
+						<h4>Iklan</h4>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4">
+					<div class="category">
+						<p class="h3">Kategori</p>
+						<ul class="list-group"> 
+							<li class="list-group-item"><a href="#"><h5><i class="fa fa-book" aria-hidden="true" style="color:gray;"></i>Buku</h5></a></li>
+							<li class="list-group-item"><a href="#"><h5><i class="fa fa-building-o" aria-hidden="true" style="color:gray;"></i>Properti</h5></a></li>
+							<li class="list-group-item"><a href="#"><h5><i class="fa fa-smile-o" aria-hidden="true" style="color:gray;"></i>Keperluan Pribadi</h5></a></li>
+							<li class="list-group-item"><a href="#"><h5><i class="fa fa-futbol-o" aria-hidden="true" style="color:gray;"></i>Hobi dan Olahraga</h5></a></li>
+							<li class="list-group-item"><a href="#"><h5><i class="fa fa-industry" aria-hidden="true" style="color:gray;"></i>Kantor dan Industri</h5></a></li>
+							<li class="list-group-item"><a href="#"><h5><i class="fa fa-laptop" aria-hidden="true" style="color:gray;"></i>Elektronik dan Gadget</h5></a></li>
+							<li class="list-group-item"><a href="#"><h5><i class="fa fa-ellipsis-h" aria-hidden="true" style="color:gray;"></i>Kategori Lainnya</h5></a></li>
+						</ul>
+						<p class="h3">Kondisi</p>
+						<ul class="list-group"> 
+							<li class="list-group-item">
+								<div class="checkbox">
+								  <label><input type="checkbox" value="baru">Baru</label>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+								  <label><input type="checkbox" value="bekas">Bekas</label>
+								</div>	
+							</li>
+						</ul>
+						<p class="h3">Rentang Harga</p>
+							<ul class="list-group"> 
+								<li class="list-group-item">
+									<form>
+										<div class="form-group">
+								          <input type="text" class="form-control" placeholder="Dari">
+								        </div>
+									</form>
+								</li>
+								<li class="list-group-item">
+									<form>
+										<div class="form-group">
+								          <input type="text" class="form-control" placeholder="Sampai">
+								        </div>
+									</form>
+								</li>
+							</ul>
+							<p class="h3">Rating</p>
+								<ul class="list-group">
+									<li class="list-group-item">
+										<div class="checkbox">
+								  			<label><input type="checkbox" value="lima">5</label>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="checkbox">
+								  			<label><input type="checkbox" value="empat">4</label>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="checkbox">
+								  			<label><input type="checkbox" value="tiga">3</label>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="checkbox">
+								  			<label><input type="checkbox" value="dua">2</label>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="checkbox">
+								  			<label><input type="checkbox" value="satu">1</label>
+										</div>
+									</li>
+								</ul>
+							<div class="input-group-btn search-panel">
+					                <button type="button" class="btn btn-default" style="background-color: #10cc13; border-color: #10cc13;">
+					                    <a href="#" style="text-decoration: none; color:white;">Filter</a>
+					                </button>
+					       </div>       
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-8">
+					<div class="browse">
+						<div class="row">
+							<div class="col-lg-10">
+								<div class="input-group">
+					                <input type="hidden" name="search_param" value="all" id="search_param">         
+					                <input type="text" class="form-control" name="x" placeholder="Searh..">
+					                <span class="input-group-btn">
+					                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+					                </span>
+					                <div class="input-group-btn search-panel">
+					                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					                    	<span id="search_concept">Sort by</span> <span class="caret"></span>
+					                    </button>
+					                    <ul class="dropdown-menu" role="menu">
+					                      <li><a href="#">Harga Terendah</a></li>
+					                      <li><a href="#">Harga Tertinggi</a></li>
+					                      <li><a href="#">Rating Tertinggi</a></li>
+					                      <li><a href="#">Iklan Terbaru</a></li>
+					                      <li><a href="#">Iklan Terlaris</a></li>
+					                    </ul>
+					                </div>
+					            </div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="content-product">   
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+						        <div class="col-sm-3">
+						        	<article class="col-item">
+						        		<div class="photo">
+						        			<a href="#"> <img src="img/product.jpg" class="img-responsive" alt="Product Image" /> </a>
+						        		</div>
+						        		<div class="info">
+						        			<div class="row">
+						        				<div class="price-details col-md-6">
+						        					<p class="details">
+						        						Lorem ipsum dolor sit amet, consectetur..
+						        					</p>
+						        					<h1>Sample Product</h1>
+						        					<span class="price-new">$110.00</span>
+						        				</div>
+						        			</div>
+						        			<div class="separator clear-left">
+						        				<p class="btn-add">
+						        					<i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+						        				</p>
+						        				<p class="btn-details">
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Add to wish list"><i class="fa fa-heart"></i></a>
+						        					<a href="#" class="hidden-sm" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fa fa-exchange"></i></a>
+						        				</p>
+						        			</div>
+						        			<div class="clearfix"></div>
+						        		</div>
+						        	</article>
+						        </div>
+							</div>	
+						</div>
+						<div class="row">
+							<div class="button-page .col-lg-pull-2 col-lg-6 col-lg-push-4">
+								<ul class="pagination">
+					              <li class="disabled"><a href="#">«</a></li>
+					              <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					              <li><a href="#">2</a></li>
+					              <li><a href="#">3</a></li>
+					              <li><a href="#">4</a></li>
+					              <li><a href="#">5</a></li>
+					              <li><a href="#">»</a></li>
+           						</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1">
+					<div class="iklan">
+						<h4>Iklan</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="col-lg-4 col-md-4">
+				<div class="row">
+					<div class="footer-logo">
+						<h1>LOGO</h1>
+						<h3>DaganganMahasiswa.com</h3>
+						<h4>Deskripsi..</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="footer-year">
+						<h5>Crafted with <i class="fa fa-heart" aria-hidden="true"></i> by DaganganMahasiswa Team 2017</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8">
+				<div class="row">
+					<div class="col-lg-8 col-lg-push-4 col-md-9 col-md-push-3 footer-text">
+						<ul class="menu list-inline">
+							<li><a href="#"><h4 class="hidden-md hidden-sm hidden-xs">Tentang Kami</h4> <h5 class="hidden-lg">Tentang Kami</h5></a></li>
+							<li><a href="#"><h4 class="hidden-md hidden-sm hidden-xs">Syarat dan Ketentuan</h4><h5 class="hidden-lg">Syarat dan Ketentuan</h5></a></li>
+							<li><a href="#"><h4 class="hidden-md hidden-xs hidden-sm">FAQ</h4><h5 class="hidden-lg">FAQ</h5></a></li>
+							<li><a href="#"><h4 class="hidden-md hidden-sm hidden-xs">Cara Kerja</h4><h5 class="hidden-lg">Cara Kerja</h5></a></li>
+							<li><a href="#"><h4 class="hidden-md hidden-xs hidden-sm">Feedback</h4><h5 class="hidden-lg">Feedback</h5></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-lg-push-8 col-md-9 col-md-push-3 footer-icon">
+						<ul class="list-inline">
+                        	<li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        	<li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                        	<li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                        	<li><a href="#"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+                        	<li><a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
