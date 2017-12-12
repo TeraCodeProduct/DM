@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dagangan Mahasiswa</title>
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+
+    <link href="css/form_pembelian.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">DaganganMahasiswa.com</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			          	<span class="glyphicon glyphicon-map-marker"></span>Lokasi 
+			          	<span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#" style="color:black;"><i class="fa fa-map-marker" aria-hidden="true"></i>Kota</a></li>
+			            <li><a href="#" style="color:black;"><span class="glyphicon glyphicon-education"></span>Universitas</a></li>
+			          </ul>
+			        </li> 
+			        </ul>
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="Search">
+			        </div>
+			        <button type="submit" class="btn btn-default">
+			        	<span class="glyphicon glyphicon-search"></span></button>
+			        <button type="button" class="btn btn-primary" style="background-color: #28a51f; border-color:  #28a51f;"><a href="#" style="text-decoration: none; color:white;">Semua</a></button>
+			      </form>
+			      	<ul class="nav navbar-nav navbar-right">
+			      		<li><a href="#"><span class="glyphicon glyphicon-plus"></span>Pasang Iklan</a></li>
+			      		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+			      		<li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+		</nav>
+	<div class="address-product">
+		<div class="container">
+			<div class="wrapper row">
+				<div class="col-sm-12">
+					<p><a href="#">Beranda</a> > <a href="#">Kategori</a> > <a href="#"> Judul Iklan</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form-pembelian">
+		<div class="container">
+			<form>
+			<div class="col-sm-6">
+					<div class="row form-content">
+						
+						<div class="col-sm-12 choose-kurir">
+						<STRONG>Pilih Kurir:</STRONG>
+						<select id="KurirType" name="KurirType" class="form-control">
+                            <option value="5">JNE</option>
+                            <option value="6">POS</option>
+                            <option value="7">J&T</option>
+                        </select>
+                        </div>
+                       	<div class="col-sm-12 choose-pembayaran">
+						<STRONG>Pilih Rekening:</STRONG>
+						<select id="RekeningType" name="RekeningType" class="form-control">
+                            <option value="5">BRI</option>
+                            <option value="6">BCA</option>
+                            <option value="7">BNI</option>
+                        </select>
+						</div>
+						<div class="col-sm-12 form-1">
+								<label><strong>Alamat :</strong></label>
+								<input type="input" name="alamat" class="form-control">
+								<label><strong>Nama Penerima :</strong></label>
+								<input type="input" name="penerima" class="form-control">
+								<label><strong>Telpon/HP :</strong></label>
+								<input type="input" name="telpon" class="form-control">
+						</div>
+						<div class="col-sm-12 choose-provinsi">
+						<STRONG>Pilih Provinsi:</STRONG>
+						<select id="ProvinsiType" name="ProvinsiType" class="form-control">
+                            <option value="5">A</option>
+                            <option value="6">B</option>
+                            <option value="7">C</option>
+                        </select>
+						</div>
+						<div class="col-sm-12 choose-kota">
+						<STRONG>Pilih Kota:</STRONG>
+						<select id="KotaType" name="KotaType" class="form-control">
+                            <option value="5">A</option>
+                            <option value="6">B</option>
+                            <option value="7">C</option>
+                        </select>
+						</div>
+						<div class="col-sm-12 alamat-lengkap">
+								<label><strong>Alamat Lengkap:</strong></label>
+								<input type="input" name="alamat-lengkap" class="form-control">
+						</div>
+			</div>
+		</div>
+		</form>
+		<div class="col-sm-6">
+					<div class="row short-review">
+						<div class="col-sm-12 ringkasan-belanja">
+							<div class="row">
+							<p style="font-weight: bold; text-align: center;">Ringkasan Belanja</p>
+							</div>
+							<div class="row">
+							<p style="font-weight: bold;">Total harga barang : </p>
+							</div>
+							<div class="row">
+							<p style="font-weight: bold;">Biaya Kirim : </p>
+							</div>
+							<div class="row">
+							<p style="font-weight: bold;">Total Belanja : </p>
+							</div>
+							<div class="row col-sm-12 button">
+							<button class="btn btn-default btn-primary" style="margin-top: 20px; background-color:  #10cc13; border-color: #10cc13;">Bayar</button>
+						</div>
+						</div>
+					</div>
+				</div>
+	</div>
+
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="col-lg-4 col-md-4">
+				<div class="row">
+					<div class="footer-logo">
+						<h1>LOGO</h1>
+						<h3>DaganganMahasiswa.com</h3>
+						<h4>Deskripsi..</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="footer-year">
+						<h5>Crafted with <i class="fa fa-heart" aria-hidden="true"></i> by DaganganMahasiswa Team 2017</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-8 col-md-8">
+				<div class="row">
+					<div class="col-lg-8 col-lg-push-4 col-md-9 col-md-push-3 footer-text">
+						<ul class="menu list-inline">
+							<li><a href="#"><h4 class="hidden-md hidden-sm hidden-xs">Tentang Kami</h4> <h5 class="hidden-lg">Tentang Kami</h5></a></li>
+							<li><a href="#"><h4 class="hidden-md hidden-sm hidden-xs">Syarat dan Ketentuan</h4><h5 class="hidden-lg">Syarat dan Ketentuan</h5></a></li>
+							<li><a href="#"><h4 class="hidden-md hidden-xs hidden-sm">FAQ</h4><h5 class="hidden-lg">FAQ</h5></a></li>
+							<li><a href="#"><h4 class="hidden-md hidden-sm hidden-xs">Cara Kerja</h4><h5 class="hidden-lg">Cara Kerja</h5></a></li>
+							<li><a href="#"><h4 class="hidden-md hidden-xs hidden-sm">Feedback</h4><h5 class="hidden-lg">Feedback</h5></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-lg-push-8 col-md-9 col-md-push-3 footer-icon">
+						<ul class="list-inline">
+                        	<li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                        	<li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                        	<li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                        	<li><a href="#"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+                        	<li><a href="#"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
